@@ -7,6 +7,7 @@
     <link href="../dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body class="bg-cover" style="background-image: url(../assets/AboutBackground.png);">
@@ -35,9 +36,11 @@
         </div>
       </nav>
 
-      <!--
       <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-        <div class="flex flex-col lg:flex-row justify-between gap-8">
+        <div class="flex flex-col lg:flex-row justify-between gap-8 pb-10">
+          <div class="w-full lg:w-8/12">
+            <img class="w-full h-full" src="../assets/AboutImage1.png" alt="A group of People" />
+          </div>
             <div class="w-full lg:w-5/12 flex flex-col justify-center">
                 <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-white pb-4">WHO IS “NOTCH”?</h1>
                 <p class="font-normal text-base leading-6 text-white">Persson was born in Stockholm, Sweden, during
@@ -55,10 +58,8 @@
                   programming at home, reverse engineering the
                   Quake-based DOOM engine.</p>
             </div>
-            <div class="w-full lg:w-8/12">
-                <img class="w-full h-full" src="../assets/AboutImage1.png" alt="A group of People" />
-            </div>
         </div>
+
         <div class="flex flex-col lg:flex-row justify-between gap-8">
           <div class="w-full lg:w-8/12">
             <img class="w-full h-full" src="../assets/AboutImage2.png" alt="A group of People" />
@@ -83,34 +84,6 @@
           </div>
       </div>
       </div>
-    OLD CODE (REWORK IN PROGRESS)--> 
-
-    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-      <div class="md:flex">
-        <div class="md:shrink-0">
-            <img class="h-48 w-full object-cover md:h-full md:w-48" src="../assets/AboutImage1.png" alt="Notch Face">
-        </div>
-        <div class="p-8">
-          <h1 class="uppercase text-white font-semibold text-5xl">WHO IS "NOTCH"?</h1>
-          <p class="lowercase text-white">Persson was born in Stockholm, Sweden, during
-            his early life, his childhood seemed a bit rough as 
-            his parents had eventually gone through a divorce, 
-            living with his mother along with his sister. Markus had gained an interest in video games
-            at an early game, having a Commodore 128 to
-            play bootleg games, and load in programs from
-            the help of computer magazines, learning how
-            to program games at the age of 7, making his
-            own text-based adventure game.
-            
-            Markus had a vision of becoming a video game
-            developer, spending his spare time with games and
-            programming at home, reverse engineering the
-            Quake-based DOOM engine.</p>
-        </div>
-      </div>
-    </div>
-
-
 
     <script src="../scripts/app.js"></script>
     <script type="text/javascript">
