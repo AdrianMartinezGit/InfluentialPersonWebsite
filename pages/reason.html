@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influential Person</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cover" style="background-image: url(../assets/ReasonsBackground.png);">
+    <!--Navbar-->
+    <nav class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight open-sans-font"><a href="../index.html">My Most Influential Person</a></span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-green-200 border-green-400 hover:text-white hover:border-white" type="button" onclick="toggleNavbar('collapse-navbar')">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="collapse-navbar">
+          <div class="text-sm lg:flex-grow">
+            <a href="./about.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
+              About
+            </a>
+            <a href="#" class="font-semibold block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+              Reasons
+            </a>
+            <a href="./source.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
+              Sources
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+        <div class="flex flex-col lg:flex-row justify-between gap-8">
+            <div class="w-full lg:w-5/12 flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-white pb-4">Why has ‘‘Notch’’ has been
+                  influential to me?</h1>
+                <p class="font-normal text-base leading-6 text-white">Ever since I was young and had an imagination
+                  of my own, which was a simpler time as a child,
+                  Minecraft was a way for me to express my
+                  creativity in building structures and meeting
+                  new friends who had the same interests as I did.
+                  
+                  As I grew older and started to dive into the field
+                  of programming, I would look back at Minecraft
+                  and how it amazes me with its procedural
+                  generation and other technical aspects that I’ve
+                  wanted to become a programmer and
+                  eventually a video game developer.</p>
+            </div>
+            <div class="w-full lg:w-8/12">
+                <img class="w-full h-full" src="../assets/ReasonsImage.png" alt="A group of People" />
+            </div>
+        </div>
+      </div>
+
+    <script src="../scripts/app.js"></script>
+    <script type="text/javascript">
+      function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("flex");
+      }
+    </script>
+</body>
+</html>

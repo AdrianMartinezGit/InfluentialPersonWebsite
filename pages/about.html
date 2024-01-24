@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influential Person</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cover" style="background-image: url(../assets/AboutBackground.png);">
+    <!--Navbar-->
+    <nav class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight open-sans-font"><a href="../index.html">My Most Influential Person</a></span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-green-200 border-green-400 hover:text-white hover:border-white" type="button" onclick="toggleNavbar('collapse-navbar')">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="collapse-navbar">
+          <div class="text-sm lg:flex-grow">
+            <a href="#" class="font-semibold block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+              About
+            </a>
+            <a href="./reason.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
+              Reasons
+            </a>
+            <a href="./source.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
+              Sources
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+        <div class="flex flex-col lg:flex-row justify-between gap-8">
+            <div class="w-full lg:w-5/12 flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-white pb-4">WHO IS “NOTCH”?</h1>
+                <p class="font-normal text-base leading-6 text-white">Persson was born in Stockholm, Sweden, during
+                  his early life, his childhood seemed a bit rough as 
+                  his parents had eventually gone through a divorce, 
+                  living with his mother along with his sister. Markus had gained an interest in video games
+                  at an early game, having a Commodore 128 to
+                  play bootleg games, and load in programs from
+                  the help of computer magazines, learning how
+                  to program games at the age of 7, making his
+                  own text-based adventure game.
+                  
+                  Markus had a vision of becoming a video game
+                  developer, spending his spare time with games and
+                  programming at home, reverse engineering the
+                  Quake-based DOOM engine.</p>
+            </div>
+            <div class="w-full lg:w-8/12">
+                <img class="w-full h-full" src="../assets/AboutImage1.png" alt="A group of People" />
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-8">
+          <div class="w-full lg:w-8/12">
+            <img class="w-full h-full" src="../assets/AboutImage2.png" alt="A group of People" />
+        </div>
+          <div class="w-full lg:w-5/12 flex flex-col justify-center">
+              <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-white pb-4">WHAT IS “NOTCH” KNOWN FOR?</h1>
+              <p class="font-normal text-base leading-6 text-white">On November 18, 2011, “Notch”  held the first ever 
+                Minecon annual convention to celebrate the full
+                release of the long-awaited sandbox game which 
+                has been in development since 2009, having left his
+                job to work on the game. Minecraft would become
+                one of the most successful games in the world.
+                
+                After many years of working and seeing the amount
+                of attention the game would receive, Notch would
+                transfer control of the project over to his colleague
+                and lead designer, Jebs Bergensten, who currently
+                serves as the CCO of Mojang Studios.
+                
+                Notch has since left the project in 2013 to pursue
+                other fields. </p>
+          </div>
+      </div>
+      </div>
+
+
+    <script src="../scripts/app.js"></script>
+    <script type="text/javascript">
+      function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("flex");
+      }
+    </script>
+</body>
+</html>

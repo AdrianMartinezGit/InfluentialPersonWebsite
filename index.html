@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influential Person</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cover" style="background-image: url(./assets/HomePage.png);">
+    <!--Navbar-->
+    <nav class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight open-sans-font">My Most Influential Person</span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-green-200 border-green-500 hover:text-white hover:border-white" type="button" onclick="toggleNavbar('collapse-navbar')">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="collapse-navbar">
+          <div class="text-sm lg:flex-grow">
+            <a href="./pages/about.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
+              About
+            </a>
+            <a href="./pages/reason.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
+              Reasons
+            </a>
+            <a href="./pages/source.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
+              Sources
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="container p-16" style="background-color: rgba(0, 0, 0, 50%);">
+        <h1 class="relative text-9xl text-white open-sans-font font-semibold">Markus<br>Alexej<br>Persson</h1>
+        <p class="relative text-2xl text-white open-sants-font py-12">(b. 1 June 1979)</p>
+        <p class="relative text-2xl text-white open-sans-font">Markus Alexej Persson , also known as 
+          "Notch", is a Swedish video game 
+          programmer and designer. He is best 
+          known for creating the sandbox 
+          video game Minecraft, which has 
+          since become the best-selling 
+          video game in history; and for founding 
+          the video game development company 
+          Mojang Studios in 2009.</p>
+      </div>
+
+    <script src="./scripts/app.js"></script>
+    <script type="text/javascript">
+      function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("flex");
+      }
+    </script>
+</body>
+</html>
